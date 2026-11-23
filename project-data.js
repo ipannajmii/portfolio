@@ -35,10 +35,10 @@ window.PortfolioData = {
       gallery: [
         { src: 'assets/art/regission.svg', alt: 'Concept illustration of a connected chessboard, camera and browser', caption: 'The connected chessboard · concept illustration' },
         { src: 'assets/art/regission-flow.svg', alt: 'A simplified system flow from board detection through the API to the web platform', caption: 'How the parts connect · system illustration' }
-        { src: 'C:\Users\IRFANNAZMIBINMOHDSAL\Downloads\c2pi best project.jpg', alt: 'C2PI Final Year Project Exhibition, 2026 - Best Project Award', caption: 'My hardworks really paid off!' }
-        { src: 'C:\Users\IRFANNAZMIBINMOHDSAL\Downloads\fyp project.jpg', alt: 'REGISSION project demonstration', caption: 'Demonstrating my REGISSION project to my supervisor' }
-        { src: 'C:\Users\IRFANNAZMIBINMOHDSAL\Downloads\machine learning.jpg', alt: 'YOLOV8 model training', caption: 'Chess pieces and board recognition' }
-        { src: 'C:\Users\IRFANNAZMIBINMOHDSAL\Downloads\layout.jpeg', alt: 'Layout for the final product', caption: 'Working user interface that connects the whole system' }
+        { src: 'assets/art/c2pi best project.jpg', alt: 'C2PI Final Year Project Exhibition, 2026 - Best Project Award', caption: 'My hardworks really paid off!' }
+        { src: 'assets/art/fyp project.jpg', alt: 'REGISSION project demonstration', caption: 'Demonstrating my REGISSION project to my supervisor' }
+        { src: 'assets/art/machine learning.jpg', alt: 'YOLOV8 model training', caption: 'Chess pieces and board recognition' }
+        { src: 'assets/art/layout.jpeg', alt: 'Layout for the final product', caption: 'Working user interface that connects the whole system' }
       ]
     },
     forensics: {
