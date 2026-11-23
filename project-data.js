@@ -33,36 +33,12 @@ window.PortfolioData = {
       ],
       links: [{ label: 'View repository', href: 'https://github.com/ipannajmii/REGISSION' }],
       gallery: [
-  {
-    src: 'assets/art/regission.svg',
-    alt: 'REGISSION concept illustration',
-    caption: 'The connected chessboard · concept illustration'
-  },
-  {
-    src: 'assets/art/regission-flow.svg',
-    alt: 'REGISSION system flow',
-    caption: 'How the parts connect · system illustration'
-  },
-  {
-    src: 'assets/photos/c2pi best project.jpg',
-    alt: 'C2PI 2026 Best Project Award',
-    caption: 'My hard work really paid off!'
-  },
-  {
-    src: 'assets/photos/fyp project.jpg',
-    alt: 'REGISSION project demonstration',
-    caption: 'Demonstrating REGISSION to my supervisor'
-  },
-  {
-    src: 'assets/photos/machine learning.jpg',
-    alt: 'YOLOv8 model training',
-    caption: 'Chess piece and board recognition'
-  },
-  {
-    src: 'assets/photos/layout.jpeg',
-    alt: 'REGISSION web interface',
-    caption: 'The web interface connected to the physical chessboard'
-  }
+  { src: 'assets/art/regission.svg', alt: 'REGISSION concept illustration', caption: 'The connected chessboard · concept illustration' },
+  { src: 'assets/art/regission-flow.svg', alt: 'REGISSION system flow', caption: 'How the parts connect · system illustration' },
+  { src: 'assets/photos/c2pi best project.jpg', alt: 'C2PI 2026 Best Project Award', caption: 'My hard work really paid off!' },
+  { src: 'assets/photos/fyp project.jpg', alt: 'REGISSION project demonstration', caption: 'Demonstrating REGISSION to my supervisor' },
+  { src: 'assets/photos/machine learning.jpg', alt: 'YOLOv8 model training', caption: 'Chess piece and board recognition' },
+  { src: 'assets/photos/layout.jpeg', alt: 'REGISSION web interface', caption: 'The web interface connected to the physical chessboard' }
 ]
     },
     forensics: {
