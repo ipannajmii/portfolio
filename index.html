@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#136b7c">
+  <meta name="description" content="Irfan Nazmi’s interactive portfolio. Explore full-stack development, computer vision and IoT through a living pond and floating chessboard.">
+  <title>Irfan Nazmi | Thoughtful systems. Playful possibilities.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="creative.css">
+  <script src="project-data.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="pond.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to selected work</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <section class="pond" id="home" aria-labelledby="hero-title">
+    <div class="water-fallback" aria-hidden="true"></div><canvas id="water" aria-hidden="true"></canvas><div class="pond-shade" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Irfan Nazmi, home"><span class="brand-piece" aria-hidden="true">♞</span> irfan<span class="wordmark-dot">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s talk</a></nav>
+    </header>
+    <div class="hero-copy">
+      <p class="eyebrow">SOFTWARE DEVELOPER · SHAH ALAM, MY</p>
+      <h1 id="hero-title" class="full-name">Irfan Nazmi Mohd Salikhin<span>.</span></h1>
+      <p class="hero-description">Thoughtful systems. <em>Playful possibilities.</em></p>
+    </div>
+    <div id="pond-life" class="pond-life" aria-hidden="true"></div>
+    <div class="pond-note note-left"><span class="note-symbol" aria-hidden="true">✧</span><p>Best Project Award<span>REGISSION · C2PI 2026</span></p></div>
+    <div class="pond-note note-right"><p>A camera. A chessboard. <br>A whole connected world.</p><button data-panel="regission" class="pond-text-button" type="button">Meet REGISSION</button></div>
+    <div class="board-scene">
+      <div class="board-shadow" aria-hidden="true"></div>
+      <div class="floating-board">
+        <div class="board-coordinates top" aria-hidden="true"><span>a</span><span>b</span><span>c</span><span>d</span><span>e</span><span>f</span><span>g</span><span>h</span></div>
+        <div id="chessboard" class="chessboard" role="group" aria-label="Floating chessboard. Select a labelled piece to explore my portfolio."></div>
+        <div class="board-signature" aria-hidden="true"><span>THINK. BUILD. MAKE A MOVE.</span><span>IN / 26</span></div>
+      </div>
+      <div class="board-invitation"><span class="tiny-knight" aria-hidden="true">♘</span><span>Your move. Pick a piece to explore.</span></div>
+    </div>
+    <div class="piece-legend" aria-label="Chessboard shortcuts"><button type="button" data-panel="about"><span aria-hidden="true">♔</span> About</button><button type="button" data-panel="projects"><span aria-hidden="true">♘</span> Projects</button><button type="button" data-panel="skills"><span aria-hidden="true">♕</span> Toolkit</button></div>
+    <div class="hero-bottom"><a class="scroll-link" href="#work"><span class="scroll-indicator" aria-hidden="true"></span>Dive into my work</a><button id="motion-toggle" class="motion-toggle" type="button" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button></div>
+  </section>
+  <div class="section-nav-wrap"><nav class="section-nav" aria-label="Page sections"><a href="#work" aria-current="location">Selected work</a><a href="#inside">Inside REGISSION</a><a href="#about">About me</a><a href="#contact">Contact</a></nav></div>
+  <main>
+    <section class="work-section content-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading" data-reveal><p class="section-kicker">SELECTED WORK</p><span class="section-aside">Built through curiosity. Refined through practice.</span></div>
+      <div class="work-intro"><h2 id="work-title" data-reveal="left">A few moves <br>I’m proud of<span class="accent-dot">.</span></h2><p data-reveal="right">From a physical chess move to a line of Python. <br>These are the ideas I’ve brought to life during my studies.</p></div>
+      <div class="filter-bar" data-reveal><div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="web" aria-pressed="false">Full-stack</button><button type="button" data-filter="python" aria-pressed="false">Python & vision</button><button type="button" data-filter="iot" aria-pressed="false">IoT</button></div><p id="filter-status" class="filter-status" role="status" aria-live="polite">4 projects</p></div>
+      <div class="project-list" id="project-list">
+        <article class="project-row" data-project="regission" data-categories="web python iot" data-reveal="left">
+          <button class="project-cover cover-chess" data-panel="regission" type="button" aria-label="Explore REGISSION"><span class="cover-label">BEST PROJECT AWARD · C2PI 2026</span><img src="assets/art/regission.svg" alt="Concept illustration of a chessboard connected to a camera and a web interface" width="960" height="660"><span class="cover-action">Explore project</span></button>
+          <div class="project-story"><p class="project-category">FULL-STACK · AI · IoT</p><h3><button data-panel="regission" type="button">The board meets <br>the browser<span>.</span></button></h3><p class="project-name">REGISSION</p><p class="project-summary">A connected chess system that sees physical moves, follows the game and brings analysis to the web.</p><div class="tags"><span>Next.js</span><span>Laravel</span><span>Python</span><span>Raspberry Pi 5</span></div><button class="text-link" data-panel="regission" type="button">Open project story</button></div>
+        </article>
+        <article class="project-row" data-project="forensics" data-categories="python" data-reveal="right">
+          <button class="project-cover cover-logs" data-panel="forensics" type="button" aria-label="Explore Digital Forensic Log Analysis"><span class="cover-label">PYTHON · DIGITAL FORENSICS</span><img src="assets/art/forensics.svg" alt="Illustrative log-processing view, with events organised along a timeline" width="960" height="660" loading="lazy"><span class="cover-action">Explore project</span></button>
+          <div class="project-story"><p class="project-category">PYTHON · AUTOMATION</p><h3><button data-panel="forensics" type="button">Finding <br>the signal<span>.</span></button></h3><p class="project-name">DIGITAL FORENSIC LOG ANALYSIS</p><p class="project-summary">Making log data easier to investigate through automated parsing, suspicious-activity filtering and event timelines.</p><div class="tags"><span>Python</span><span>Log analysis</span><span>Reporting</span></div><button class="text-link" data-panel="forensics" type="button">Open project story</button></div>
+        </article>
+        <article class="project-row" data-project="mediapipe" data-categories="python" data-reveal="left">
+          <button class="project-cover cover-vision" data-panel="mediapipe" type="button" aria-label="Explore MediaPipe Face and Hand Tracking"><span class="cover-label">COMPUTER VISION · REAL TIME</span><img src="assets/art/mediapipe.svg" alt="Concept illustration of the 21 landmarks and connections of a tracked hand" width="960" height="660" loading="lazy"><span class="cover-action">Explore project</span></button>
+          <div class="project-story"><p class="project-category">COMPUTER VISION · PYTHON</p><h3><button data-panel="mediapipe" type="button">A different way <br>of seeing<span>.</span></button></h3><p class="project-name">MEDIAPIPE FACE & HAND TRACKING</p><p class="project-summary">Exploring real-time face detection and hand tracking, one webcam frame and 21 hand landmarks at a time.</p><div class="tags"><span>MediaPipe</span><span>OpenCV</span><span>Python</span></div><button class="text-link" data-panel="mediapipe" type="button">Open project story</button></div>
+        </article>
+        <article class="project-row" data-project="blindstick" data-categories="iot" data-reveal="right">
+          <button class="project-cover cover-stick" data-panel="blindstick" type="button" aria-label="Explore the Smart IoT Blind Stick"><span class="cover-label">ASSISTIVE TECHNOLOGY · IoT</span><img src="assets/art/blindstick.svg" alt="Concept illustration of a sensor-equipped walking stick detecting a nearby obstacle" width="960" height="660" loading="lazy"><span class="cover-action">Explore project</span></button>
+          <div class="project-story"><p class="project-category">IoT · ASSISTIVE TECHNOLOGY</p><h3><button data-panel="blindstick" type="button">Technology with <br>a helping hand<span>.</span></button></h3><p class="project-name">SMART IoT BLIND STICK</p><p class="project-summary">An academic smart-stick concept combining sensors, a microcontroller and real-time alerts to detect nearby obstacles.</p><div class="tags"><span>IoT</span><span>Sensors</span><span>Microcontroller</span></div><button class="text-link" data-panel="blindstick" type="button">Open project story</button></div>
+        </article>
+      </div>
+      <noscript><p>Project summaries are available above. Enable JavaScript for the pond, project popups and galleries.</p></noscript>
+    </section>
+    <section class="inside-section" id="inside" aria-labelledby="inside-title"><div class="content-section">
+      <div class="inside-heading" data-reveal><div><p class="section-kicker">INSIDE REGISSION</p><h2 id="inside-title">Follow the move<span>.</span></h2></div><p>One chess move. A few connected pieces. <br>Select a stage to see how they work together.</p></div>
+      <div class="flow-layout" data-reveal><div class="flow-selector" role="tablist" aria-label="REGISSION system stages"><button type="button" id="stage-see" role="tab" aria-controls="stage-content" aria-selected="true" data-stage="see">See the move</button><button type="button" id="stage-connect" role="tab" aria-controls="stage-content" aria-selected="false" tabindex="-1" data-stage="connect">Connect the game</button><button type="button" id="stage-understand" role="tab" aria-controls="stage-content" aria-selected="false" tabindex="-1" data-stage="understand">Understand the position</button></div>
+      <div id="stage-content" class="stage-content" role="tabpanel" aria-labelledby="stage-see" tabindex="0"><div class="stage-diagram" aria-hidden="true"><span>Camera</span><i></i><span>Detection</span><i></i><span>Board state</span></div><h3>A physical move becomes a digital event.</h3><p>The Raspberry Pi 5 camera supplies images. YOLOv8 and OpenCV support board and piece detection so physical board changes can enter the connected system.</p><div class="tags"><span>Raspberry Pi 5</span><span>YOLOv8</span><span>OpenCV</span></div></div></div>
+    </div></section>
+    <section class="about-section content-section" id="about" aria-labelledby="about-title">
+      <p class="section-kicker" data-reveal>THE PERSON BEHIND THE PIECES</p>
+      <div class="about-grid"><div data-reveal="left"><h2 id="about-title">Curious by nature. <br>Developer by practice.</h2><p class="about-signature">Irfan Nazmi.</p><a class="pill-button" href="assets/irfan-nazmi-cv.pdf" download>Download my CV</a></div><div class="about-copy" data-reveal="right"><p>I’m Irfan, an early-career software developer with a Computer Science background in Data Communication and Networking from UiTM, Jasin.</p><p>I enjoy connecting the different parts of a system: the interface, the API, the database and the device. My work spans full-stack development, computer vision, IoT and practical data tools.</p><p>Chess has been part of that journey too, from leading the UiTM Jasin Chess Club to building my final year project around a real chessboard.</p><button class="text-link" data-panel="about" type="button">A little more about me</button></div></div>
+      <div class="toolkit" data-reveal><h3>Tools I build with</h3><div class="toolkit-rows"><details open><summary>Web & systems</summary><p>Next.js, Laravel, REST APIs, authentication, MySQL, HTML, CSS and JavaScript.</p></details><details><summary>Computer vision & IoT</summary><p>Python, MediaPipe, YOLOv8, OpenCV, Raspberry Pi, sensor integration and microcontrollers.</p></details><details><summary>Data & infrastructure</summary><p>Oracle Database 19c, Linux, database health checks, log analysis, networking and technical reporting.</p></details></div></div>
+    </section>
+    <section class="journey-section content-section" id="journey" aria-labelledby="journey-title"><div class="journey-heading" data-reveal="left"><p class="section-kicker">A LITTLE CONTEXT</p><h2 id="journey-title">Learning. <br>Building. <br>Connecting.</h2></div><div class="journey-list"><article data-reveal="right"><p class="journey-date">2023 – 2026</p><h3>Computer Science at UiTM</h3><p>Data Communication and Networking, Jasin Campus. Exploring software, connected devices and practical problem solving.</p></article><article data-reveal="right"><p class="journey-date">2026</p><h3>From final year project to Best Project Award</h3><p>REGISSION received the Best Project Award at the UiTM C2PI Final Year Project Exhibition.</p></article><article data-reveal="right"><p class="journey-date">SEP 2026 – PRESENT</p><h3>RIZQ Technologies</h3><p>Database & Engineered Systems internship at the LHDN customer site, with exposure to Oracle databases, Linux and health-check reporting.</p><button class="text-link" data-panel="experience" type="button">Explore my experience</button></article></div></section>
+  </main>
+  <footer class="contact-section" id="contact"><div class="content-section"><p class="section-kicker" data-reveal>THE NEXT MOVE</p><h2 data-reveal="left">Let’s build <br>something thoughtful<span>.</span></h2><p class="contact-intro" data-reveal>Open to Software Engineer, Software Developer <br>and Full-Stack Developer opportunities.</p><a class="email-link" href="mailto:nazmiirfan50@gmail.com" data-reveal>nazmiirfan50@gmail.com</a><div class="footer-bottom"><span>© 2026 Irfan Nazmi</span><div><a href="https://www.linkedin.com/in/irfan-nazmi-bin-mohd-salikhin-478486392/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/ipannajmii" target="_blank" rel="noopener noreferrer">GitHub</a><a href="assets/irfan-nazmi-cv.pdf" download>CV</a><a href="#home">Back to the pond</a></div></div></div></footer>
+  <dialog id="portfolio-dialog" class="portfolio-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span id="dialog-eyebrow" class="section-kicker"></span><button class="dialog-close" id="dialog-close" type="button" aria-label="Close project details">×</button></div><div id="dialog-content"></div></dialog>
+  <dialog id="image-dialog" class="image-dialog" aria-label="Enlarged project image"><div class="lightbox-top"><p id="image-count"></p><button type="button" id="image-close" class="dialog-close" aria-label="Close enlarged image">×</button></div><img id="lightbox-image" alt=""><p id="lightbox-caption"></p><div class="lightbox-controls"><button type="button" data-lightbox-step="-1">Previous</button><button type="button" data-lightbox-step="1">Next</button></div></dialog>
+</body>
+</html>

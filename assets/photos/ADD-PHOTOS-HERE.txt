@@ -1,0 +1,3 @@
+Put your real project images here, or in subfolders such as regission/.
+Then add the relative paths and captions to the photos arrays at the top of project-data.js.
+See ADD-YOUR-PHOTOS.md in the main folder for a copy-and-paste example.
