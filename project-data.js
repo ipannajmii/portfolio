@@ -72,7 +72,9 @@ window.PortfolioData = {
       links: [{ label: 'Watch the walkthrough', href: 'https://youtu.be/P5r4eA8Gp_0' }],
       gallery: [
         { src: 'assets/art/mediapipe.svg', alt: 'Concept illustration of 21 connected landmarks on a hand', caption: 'Hand landmark connections · concept illustration' },
-        { src: 'assets/art/mediapipe-flow.svg', alt: 'A simplified camera, processing and landmark overlay workflow', caption: 'From webcam to visual landmarks · pipeline illustration' }
+        { src: 'assets/art/mediapipe-flow.svg', alt: 'A simplified camera, processing and landmark overlay workflow', caption: 'From webcam to visual landmarks · pipeline illustration' },
+        { src: 'assets/art/face.jpeg', alt: 'Real-time face detection using MediaPipe and OpenCV', caption: 'Detecting a face and highlighting its location in a live webcam feed using MediaPipe and OpenCV.' },
+        { src: 'assets/art/hand.jpeg', alt: 'Real-time tracking of 21 hand landmarks', caption: 'Tracking 21 hand landmarks and displaying their connections in real time using MediaPipe and OpenCV.' }
       ]
     },
     blindstick: {
